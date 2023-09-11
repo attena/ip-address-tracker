@@ -1,16 +1,17 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core'; 
+import { BrowserModule } from '@angular/platform-browser'; 
+import { ComponentsModule } from 'src/components/components.module'; 
+import { AppComponent } from './app.component'; 
 
-import { AppComponent } from './app.component';
-
-@NgModule({
-  declarations: [
-    AppComponent
+@NgModule({ 
+  declarations: [ 
+    AppComponent 
   ],
-  imports: [
-    BrowserModule
+  imports: [ 
+    BrowserModule, 
+    ComponentsModule 
   ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+  providers: [], 
+  bootstrap: [AppComponent] 
+}) 
+export class AppModule { } 
